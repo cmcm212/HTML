@@ -1,0 +1,9 @@
+# 마크업언어
+1. XML(eXtensible Markup Language)
+    사용자 정의 태그
+    자료의 구조를 설명
+2. HTML(HyperText Markup Language)
+    태그가 표준화(w3c)
+    웹 페이지를 작성
+* react.js, vue.js를 사용할 때는 xml형식의 html을 사용한다.
+
