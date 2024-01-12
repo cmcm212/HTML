@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 다른 사람이 만든 css를 가져온다. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style> /* 태그 선택자는 잘 사용되지 않음. 너무 광범위하게 잡힘 */
+        /* 태그 선택자 < 클래스 선택자 < 아이디 선택자 */
+        .target {color: red;}
+        .fa-apple, .fa-thumbs-up {
+            color: red;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        아이디는 요소 1개, 클래스는 여러개
+    -->
+    <p class="target">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+    <p class="target">우리나라 좋은나라</p>
+    <i class="fa fa-apple" aria-hidden="true"></i>
+    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+</body>
+</html>

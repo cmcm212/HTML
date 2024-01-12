@@ -1,0 +1,5 @@
+/* 전체 선택자 : 우선수위 0. css초기화(reset) */
+ * {margin: 0;}
+.red { color: red;}
+
+/* .css 파일은 css 작성하는 파일 */

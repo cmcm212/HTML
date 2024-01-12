@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /* 태그 선택자(1), 클래스 선택자(10), 아이디 선택자(100)*/
+        p {font-weight: bold; color:red;}
+        .underline {text-decoration: underline;}
+        span.underline { text-decoration: none;}    /*span(태그선택자).underline(클래스선택자) -> 우선도 1+10 해서 11*/
+        #target { color: yellow;}
+    </style>
+</head>
+<body>
+    <p>우리나라 좋은나라</p>
+    <p class="underline" id="target">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+    <p class="underline">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+    <span class="underline">연습</span>
+    <!--
+        css, 그래픽 : web 퍼블리셔
+        자바스크립트 : frontend 웹 프로그래밍
+    -->
+</body>
+</html>
