@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        div { border: 1px solid red; width: 100px; height: 100px;
+            text-align: center; line-height: 100px;}
+        .content-box { padding: 20px;}
+        .border-box { padding: 20px; box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <!-- 패딩, 보더가 너비, 높이에 포함되지 않는다. -->
+        C
+    </div>
+    <div class="border-box">
+        <!-- 패딩, 보더를 너비, 높이에 포함.
+            너비, 높이가 같으면 패딩, 보더가 달라도 보이는 모양이 같다.
+        -->
+        B
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>

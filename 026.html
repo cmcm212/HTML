@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체 선택자로 브라우저 기본 css를 덮어썼다(reset) */
+        * { margin: 0; padding: 0;
+            /*
+                높이와 너비를 계산할 때 border까지 계산해라
+                기본값은 높이 계산할 때 padding, border가 빠진다.    
+            */
+            box-sizing: border-box;
+        }
+        .menu ol {
+            list-style: none;
+        }
+        .menu ol li {
+            /* 인라인 블록이 약점 : 줄 맞추기, */
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            width: 150px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+        }
+        /* 가상 클래스 선택자 : 으로 시작하며 상황을 지정*/
+        .menu ol li:hover {
+            border:1px solid blue;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- 메뉴는 서로 관련된 요소들의 집합이고 ul이나 ol을 보통 사용-->
+        <ol>
+            <li>학원 소개</li>
+            <li>교육 과정</li>
+            <li>취업지원센터</li>
+            <li>고객 센터</li>
+        </ol>
+    </div>
+</body>
+</html>
